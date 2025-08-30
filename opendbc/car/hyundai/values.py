@@ -215,10 +215,17 @@ class CAR(Platforms):
     CarSpecs(mass=2060, wheelbase=3.01, steerRatio=16.5, minSteerSpeed=60 * CV.KPH_TO_MS),
     flags=HyundaiFlags.CHECKSUM_6B | HyundaiFlags.LEGACY,
   )
-GENESIS_GV80_2020 = HyundaiPlatformConfig(
-    [HyundaiCarDocs("Genesis GV80 2020-22", "All", car_parts=CarParts.common([CarHarness.hyundai_m]))],
-    CarSpecs(mass=2250, wheelbase=2.95, steerRatio=14.14),
-    flags=HyundaiFlags.RADAR_SCC,   # adjust if your car uses Camera SCC instead of Radar
+  HYUNDAI_PLATFORMS[CAR.GENESIS_GV80_2020] = HyundaiPlatformConfig(
+    car_docs=[
+     HyundaiCarDocs(
+       "Genesis GV80 2020–2021 (JX1, CAN)",
+       "All",
+       car_parts=CarParts.common([CarHarness.hyundai_m]),
+    )
+    ],
+    specs=CarSpecs(mass=2250,wheelbase=2.95,steerRatio=14.14,   # Here's Musaab Code change.
+   ),
+    flags=HyundaiFlags.CAN | HyundaiFlags.RADAR_SCC,
   )
   HYUNDAI_IONIQ = HyundaiPlatformConfig(
     [HyundaiCarDocs("Hyundai Ioniq Hybrid 2017-19", car_parts=CarParts.common([CarHarness.hyundai_c]))],
