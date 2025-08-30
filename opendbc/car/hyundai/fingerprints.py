@@ -23,22 +23,23 @@ FW_VERSIONS = {
   },
   CAR.GENESIS_GV80_2020: {
     (Ecu.cornerRadar, 0x7b7, None): [
-        b'\xf1\x00JX1 BCW RR 1.00 , 1.04 (q`q \x01\x90R\x06',
-        b'\xf1\x8b  \x07\x13  \x07\x08  \x05\x19  \x05 ',
+      b'\xf1\x00JX1 BCW RR 1.00 , 1.04 (q`q \x01\x90R\x06',
+      b'\xf1\x8b  \x07\x13  \x07\x08  \x05\x19  \x05 ',
     ],
     (Ecu.fwdRadar, 0x7d0, None): [
-        b'\xf1\x00JX1_ SCC -----      1.00 1.03 99110-T6000         ',
-        b'\xf1\x8b  \x10$',
-        b'\xf1\x10\x00/\x00\x00',
+      b'\xf1\x00JX1_ SCC -----      1.00 1.03 99110-T6000         ',
+      b'\xf1\x8b  \x10$',
+      b'\xf1\x10\x00/\x00\x00',
     ],
     (Ecu.hvac, 0x7b3, None): [
-        b"\xf1\x00JX1   97255-T6010CONTROL ASS'Y-DATC  1.05JX1 DATC(-)2.1       ",
+      b"\xf1\x00JX1   97255-T6010CONTROL ASS'Y-DATC  1.05JX1 DATC(-)2.1       ",
     ],
     (Ecu.fwdCamera, 0x7c4, None): [
-        b'\xf1\x00JX1 MFC  AT KOR LHD 1.00 1.04 99211-T6010 200514',
-        b'\xf1\x8b  \x11$',
+      b'\xf1\x00JX1 MFC  AT KOR LHD 1.00 1.04 99211-T6010 200514',
+      b'\xf1\x8b  \x11$',
     ],
-},
+  },
+
   CAR.HYUNDAI_AZERA_HEV_6TH_GEN: {
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00IGH MFC  AT KOR LHD 1.00 1.00 99211-G8000 180903',
